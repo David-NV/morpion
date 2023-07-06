@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./script/script.js" defer></script>
+        <title>morpion</title>
+    </head>
+    <body>
+        <main>
+            <div class="game_output">
+                <div class="cadrillage">
+                    <button class="new_game">Nouveau Jeu</button>
+                    <button class="option">...</button>
+                    <div class="message"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                    <div class="grille_cases"></div>
+                </div>
+            </div>
+            <dialog class="dialog_option">
+                <div>
+                    <div>
+                        <label for="input_nom_joueur1">Nom du joueur n°1</label>
+                        <input type="text" name="input_nom_joueur1" class="input_nom_joueur1" value="joueur 1">
+                    </div>
+                    <div>
+                        <label for="lettre_joueur1">Caractère du joueur n°1 (lettre ou chiffre seulement)</label>
+                        <input type="text" name="lettre_joueur1" class="lettre_joueur1" value="X" maxlength="1">
+                    </div>
+                    <div>
+                        <label for="couleur_joueur1">couleur du joueur n°1</label>
+                        <select class="couleur_joueur1" >
+                            <option class="option_couleur_joueur1" value="red" selected>rouge</option>
+                            <option class="option_couleur_joueur1" value="blue">bleu</option>
+                            <option class="option_couleur_joueur1" value="yellow">jaune</option>
+                            <option class="option_couleur_joueur1" value="green">vert</option>
+                            <option class="option_couleur_joueur2" value="purple">violet</option>
+                            <option class="option_couleur_joueur2" value="black">noir</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="input_nom_joueur1">Nom du joueur n°2</label>
+                        <input type="text" name="input_nom_joueur2" class="input_nom_joueur2" value="joueur 2">
+                    </div>
+                    <div>
+                        <label for="lettre_joueur2">Caractère du joueur n°2 (lettre ou chiffre seulement)</label>
+                        <input type="text" name="lettre_joueur2" class="lettre_joueur2" value="O" maxlength="1">
+                    </div>
+                    <div>
+                        <label for="couleur_joueur2">couleur du joueur n°2</label>
+                        <select class="couleur_joueur2" >
+                            <option class="option_couleur_joueur2" value="red" selected>rouge</option>
+                            <option class="option_couleur_joueur2" value="blue">bleu</option>
+                            <option class="option_couleur_joueur2" value="yellow">jaune</option>
+                            <option class="option_couleur_joueur2" value="green">vert</option>
+                            <option class="option_couleur_joueur2" value="purple">violet</option>
+                            <option class="option_couleur_joueur2" value="black">noir</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="dialog_option_cancelBtn" value="cancel">annuler</button>
+                        <button class="dialog_option_confirmBtn" value="confirm">confirmer</button>
+                    </div>
+                </div>
+            </dialog>
+        </main>
+    </body>
+</html>
